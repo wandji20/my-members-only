@@ -7,6 +7,11 @@ gem 'rubocop', '~>0.81.0'
 
 gem 'simple_form'
 
+gem 'bootstrap', '~> 4.6.0'
+
+gem 'sprockets-rails', '~> 3.2', '>= 3.2.2'
+
+gem 'jquery-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.1.1'
 # Use sqlite3 as the database for Active Record
