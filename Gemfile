@@ -12,6 +12,8 @@ gem 'bootstrap', '~> 4.6.0'
 gem 'sprockets-rails', '~> 3.2', '>= 3.2.2'
 
 gem 'jquery-rails'
+
+gem 'devise', '~> 4.7', '>= 4.7.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.1.1'
 # Use sqlite3 as the database for Active Record
