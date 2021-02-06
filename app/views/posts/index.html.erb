@@ -9,9 +9,8 @@
       
       <% @posts.each do |post| %>
   
-        <p class="h4"><%= post.member.member_name %></p>
           
-        <p class="h4"> @unknown_member </p>
+        <p class="h4"> <%= display_post(post) %> </p>
        
         <p class='text-italics'><%= post.post %></p>           
       <% end %>
