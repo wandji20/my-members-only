@@ -5,16 +5,15 @@
   
   <div class="col-md-4">
       <h2>Member Posts</h2>
-      <% if member_signed_in? %>
-        <%= render 'form' %>
-      <% end %>
+      <%= render post_form %>
+      
       <% @posts.each do |post| %>
-        <% if member_signed_in? %>
-          <p class="h4"><%= post.member.member_name %></p>
-          <% else %>
-          <p class="h4"> @unknown_member </p>
-        <% end %> 
-         <p><%= post.post %></p>           
+  
+        <p class="h4"><%= post.member.member_name %></p>
+          
+        <p class="h4"> @unknown_member </p>
+       
+        <p class='text-italics'><%= post.post %></p>           
       <% end %>
 
   </div>
