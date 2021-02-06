@@ -12,21 +12,7 @@
 
   <body>
     <div class="container-fluid">
-      <div class="row">
-         <div class="col-4 text-center">
-          <% if flash[:notice] %>
-            <div class="text-success">
-              <p class="notice"><%= notice %></p>
-            </div>
-          <% end %>
-
-          <% if flash[:alert] %>
-            <div class="text-danger">
-              <p class="alert"><%= alert %></p>
-            </div>
-          <% end %>
-        </div>
-      </div>
+      <%= render '/layouts/top_notification' %>
       <div class="row">
         <nav class="navbar w-100 navbar-expand-md navbar-light bg-light">
           <div>
@@ -39,12 +25,11 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
+
             <ul class="navbar-nav">
-
-
               <%= render my_sign_in %>
- 
             </ul>
+
           </div>
         </nav>
       </div>
