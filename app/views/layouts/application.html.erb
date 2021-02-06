@@ -11,6 +11,30 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container-fluid">
+      <%= render '/layouts/top_notification' %>
+      <div class="row">
+        <nav class="navbar w-100 navbar-expand-md navbar-light bg-light">
+          <div>
+            <%= link_to root_path, class:'navbar-brand' do %>
+              <h1>Members Club </h1>
+            <% end %>
+          </div>
+  
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav">
+              <%= render my_sign_in %>
+            </ul>
+
+          </div>
+        </nav>
+      </div>
+
+      <%= yield %>
+    </div>
   </body>
 </html>
